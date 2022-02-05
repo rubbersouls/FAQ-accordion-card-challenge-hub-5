@@ -1,0 +1,179 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Kumbh Sans', sans-serif;
+}
+
+body{
+	background: linear-gradient(360deg, rgba(105,99,231,1) 39%, rgba(165,104,234,1) 80%);
+	background-size: 100vh, 100vh;
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+}
+
+section{
+	height: 509px;
+	width: 920px;
+	background-color: #FFF;
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: 20px;
+}
+
+.box:nth-child(1){
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 477px;
+  height: 510px;
+  background-image: url(images/bg-pattern-desktop.svg);
+  background-size: 850px;
+  background-position: -425px -245px;
+  background-repeat : no-repeat;
+}
+
+.box:nth-child(2){
+	width: 443px;
+}
+
+.imgwoman{
+	margin-left: -100px;
+	margin-top: -40px;
+
+}
+
+.imgbox{
+	position: absolute;
+	margin-left: -425px;
+	margin-top: 55px;
+}
+
+.imgmobil{
+	display: none;
+}
+
+.box:nth-child(2)>h1{
+	padding-top: 72px;
+	font-size: 2em;
+	padding-bottom: 29px;
+}
+
+
+.fleche{
+	padding-top: 10px;
+	margin-right: 15px;
+	float: right;
+}
+
+.question{
+	padding-left: 3px;
+	margin-right: 95px;
+	padding-bottom: 20px;
+	font-size: 0.9em;
+}
+
+.survole:hover{
+	color: #F77B57;
+	cursor: pointer;
+}
+
+.texte{
+	display: none;
+}
+
+hr{
+	margin-right: 96px;
+	border: 1px solid #E9E9E9;
+}
+
+.question2, .question3, .question4, .question5{
+	padding-top: 20px;
+	margin-right: 96px;
+	padding-bottom: 20px;
+	font-size: 0.9em;
+	
+}
+
+.accordion-control.active > .texte{
+	display: block;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	margin-right: 96px;
+	font-size: 0.8em;
+	color: #A4A4A5;
+}
+
+.accordion-control.active > .survole > .question > .fleche{
+	transform: rotate(180deg);
+}
+
+.accordion-control.active > .survole > .question2 > .fleche{
+	transform: rotate(180deg);
+}
+
+.accordion-control.active >.survole > .question{
+	padding-bottom: 0;
+	font-weight: bold;
+}
+
+.accordion-control.active >.survole > .question2{
+	padding-bottom: 0;
+	font-weight: bold;
+}
+
+@media (max-width: 950px){
+
+section{
+	margin-top: 130px;
+	margin-bottom: 25px;
+	width: 330px;
+	height: 520px;
+}
+
+
+.box:nth-child(1){
+	background-image: none;
+	  overflow: visible;
+	  height: 30px;
+}
+
+.imgwoman, .imgbox{
+	display: none;
+}
+
+.imgmobil{
+	display: block;
+	width: 250px;
+	height: 250px;
+	margin-top: -10px;
+}
+
+.box:nth-child(2)>h1{
+	padding-top: 10px;
+	text-align: center;
+}
+
+.question, .question2, .question3, .question4, .question5{
+	margin-right: 15px;
+	margin-left: 10px;
+}
+
+.accordion-control.active > .texte{
+	margin-right: 45px;
+	margin-left: 10px;
+}
+
+hr{
+	margin-right: 15px;
+	margin-left: 10px;
+}
+
+}	
